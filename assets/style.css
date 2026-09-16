@@ -5,3 +5,28 @@
 
 /* Da Nang review content */
 .review-photo{margin:0 0 30px}.review-photo img{width:100%;height:auto;display:block}.review-visual .review-photo{margin:0}.review-visual .review-photo img{max-height:850px;width:100%;object-fit:contain;object-position:top center}.review-art{aspect-ratio:auto}.review-art img{height:auto;object-fit:contain}.card-image{background:#292622}.card-image img{object-fit:contain}.review-section{border-top:1px solid var(--line);padding-top:24px;margin-top:35px}.review-section p{font-size:16px;line-height:1.9;margin:10px 0 0}.drink-entry+.drink-entry{border-top:1px solid var(--line);padding-top:36px;margin-top:38px}.drink-entry .review-photo{margin-bottom:28px}.small-photo{max-width:340px;margin-top:22px}.visit-date{white-space:nowrap}.verdict{border-top:1px solid var(--line);padding-top:26px}
+/* Keep portrait photos comfortably sized beside editorial review copy. */
+/* Consistent square photos and editorial rows for every review. */
+.card-image img{object-fit:cover}
+.review-layout{display:block;padding-bottom:90px}
+.review-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:75px;align-items:start;margin-bottom:72px}
+.review-row+.review-row{border-top:1px solid var(--line);padding-top:60px}
+.review-row .review-art,.review-row .review-photo{width:100%;aspect-ratio:1;margin:0;overflow:hidden;background:#302c28}
+.review-row .review-art img,.review-row .review-photo img{display:block;width:100%;height:100%;max-height:none;object-fit:cover;object-position:center}
+.review-row .drink-entry{margin:0;padding:0;border:0}
+.review-layout>.review-section{max-width:760px;margin:0 0 50px}
+.review-closing{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:75px;align-items:start;border-top:1px solid var(--line);padding-top:34px}
+.review-closing .review-section,.review-closing .verdict{border:0;margin:0;padding:0}
+.review-closing .small-photo{width:min(100%,340px);aspect-ratio:1;overflow:hidden;margin-top:25px}
+.review-closing .small-photo img{width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.review-row,.review-closing{gap:35px}}
+@media(max-width:700px){.review-row,.review-closing{grid-template-columns:1fr;gap:28px}.review-row{margin-bottom:50px}.review-row+.review-row{padding-top:40px}.review-row .review-visual{max-width:600px}.review-layout>.review-section{margin-bottom:40px}.review-closing .verdict{margin-top:8px}}
+
+/* Short photo captions and consistent closing sections. */
+.review-visual .pullquote{font:clamp(21px,2.2vw,27px)/1.25 var(--serif);margin:24px 0 0;padding-left:17px;border-left:2px solid var(--lavender)}
+.review-layout>.review-section{max-width:none;border-top:1px solid var(--line);padding-top:30px}
+.review-layout>.review-section p{max-width:760px}
+.review-closing--no-extras .verdict{grid-column:2}
+@media(max-width:700px){.review-closing--no-extras .verdict{grid-column:1}}
+
+.review-extras .pullquote{font:clamp(21px,2.2vw,27px)/1.25 var(--serif);margin:24px 0 0;padding-left:17px;border-left:2px solid var(--lavender)}

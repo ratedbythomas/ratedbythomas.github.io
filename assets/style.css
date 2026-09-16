@@ -30,3 +30,5 @@
 @media(max-width:700px){.review-closing--no-extras .verdict{grid-column:1}}
 
 .review-extras .pullquote{font:clamp(21px,2.2vw,27px)/1.25 var(--serif);margin:24px 0 0;padding-left:17px;border-left:2px solid var(--lavender)}
+
+.ranking-back{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center}

@@ -53,3 +53,9 @@
 .about-hero-media{width:100%;max-width:460px}
 .about-photo-caption{font-size:15px;color:var(--muted);margin:18px 0 0}
 @media(max-width:760px){.about-hero{grid-template-columns:1fr;gap:30px}.about-hero-media{max-width:320px}.about-photo-caption{font-size:14px}}
+
+/* Keep the About caption and opening copy visible sooner. */
+.article.about-page{padding-top:40px}
+.about-hero{margin-bottom:30px}
+.about-hero-media{max-width:320px}
+@media(max-width:760px){.about-hero-media{max-width:250px}.about-hero{gap:20px;margin-bottom:26px}}

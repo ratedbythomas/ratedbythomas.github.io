@@ -32,3 +32,24 @@
 .review-extras .pullquote{font:clamp(21px,2.2vw,27px)/1.25 var(--serif);margin:24px 0 0;padding-left:17px;border-left:2px solid var(--lavender)}
 
 .ranking-back{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center}
+
+/* Batch 2: header copy and About portrait. */
+.header-tagline{flex:1;margin-left:22px;padding-left:24px;border-left:1px solid var(--line);max-width:285px;color:var(--muted);font:500 12px/1.4 var(--sans)}
+.header-inner nav{margin-left:auto;flex-shrink:0}
+.location-intro span{display:block}.location-intro span+span{margin-top:7px}
+.article.about-page{max-width:none;padding-top:68px}
+.about-hero{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(36px,6vw,100px);margin-bottom:58px}
+.about-photo{display:block;aspect-ratio:4/5;overflow:hidden;background:#202026}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 53%}
+.about-hero h1{font-size:clamp(48px,5vw,78px);letter-spacing:-1.5px;margin:0 0 22px}
+.about-hero-text p{font-size:15px;color:var(--muted);margin:0}
+.about-copy{max-width:760px}.about-copy>p{font-size:18px;line-height:1.8;margin-bottom:26px}
+.about-copy .about-intro{font:clamp(24px,2.6vw,32px)/1.35 var(--serif);border-left:2px solid var(--lavender);padding-left:22px;margin:42px 0}
+.about-copy .house-rule{font-size:14px;line-height:1.75;color:var(--muted);border-top:1px solid var(--line);padding-top:22px;margin:50px 0 58px}
+@media(max-width:760px){.header-inner{display:grid;grid-template-columns:1fr auto;gap:12px 18px}.header-tagline{grid-column:1/-1;grid-row:2;max-width:none;margin:0;padding:0;border:0;font-size:11px}.header-inner nav{grid-column:2;grid-row:1;margin:0}.about-hero{grid-template-columns:1fr;gap:28px}.about-photo{max-width:560px;aspect-ratio:4/5}.article.about-page{padding-top:45px}.about-hero h1{font-size:clamp(46px,9vw,68px)}.about-copy>p{font-size:16px}.about-copy .about-intro{font-size:26px}}
+
+/* About portrait refinement. */
+.about-hero{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(36px,5vw,78px)}
+.about-hero-media{width:100%;max-width:460px}
+.about-photo-caption{font-size:15px;color:var(--muted);margin:18px 0 0}
+@media(max-width:760px){.about-hero{grid-template-columns:1fr;gap:30px}.about-hero-media{max-width:320px}.about-photo-caption{font-size:14px}}

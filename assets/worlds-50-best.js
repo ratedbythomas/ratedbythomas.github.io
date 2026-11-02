@@ -2,7 +2,8 @@
   const worlds50BestHistory = Object.freeze({
     "zest": Object.freeze({ "2025": 16, "2026": 7 }),
     "bar-cham": Object.freeze({ "2025": 53, "2026": 71 }),
-    "danico": Object.freeze({ "2026": 26 })
+    "danico": Object.freeze({ "2026": 26 }),
+    "panda-and-sons": Object.freeze({ "2026": 72 })
   });
   const years = Object.values(worlds50BestHistory).flatMap(history => Object.keys(history).map(Number));
   const latestYear = Math.max(...years);
